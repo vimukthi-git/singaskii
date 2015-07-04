@@ -17,7 +17,7 @@ public class AdaptedFloydWarshall {
     public static Path findLongestSteepestPath(int[][] paths, MountainPeakMap map) {
         int length = 0;
         int drop = 0;
-        List<Integer> longestPath = new ArrayList<>();
+        List<Integer> longestPath = new ArrayList<Integer>();
         for(int i = 0;i < map.getPeaks().size(); i++){
           for(int j = 0;j < map.getPeaks().size(); j++){
             List<Integer> tmpPath = path(i, j, paths, map);
@@ -41,7 +41,7 @@ public class AdaptedFloydWarshall {
       if (paths[i][j] == -1){
             return null;
       }
-      List<Integer> path = new ArrayList<>();
+      List<Integer> path = new ArrayList<Integer>();
       path.add(map.getPeaks().get(i).getHeight());
       while(i != j){
         i = paths[i][j];

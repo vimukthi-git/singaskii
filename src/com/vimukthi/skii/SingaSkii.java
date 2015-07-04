@@ -30,13 +30,14 @@ public class SingaSkii {
 //        for (int i = 0; i < peaksLineStr.length; i++) {
 //            map = processLine(peaksLineStr, i, map);            
 //        }
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            int i = 0;            
-            while ((line = br.readLine()) != null) {
-               map = processLine(line, i, map);
-               i++;
-            }
+        
+        BufferedReader br;
+        br = new BufferedReader(new FileReader(file));
+        String line;
+        int i = 0;            
+        while ((line = br.readLine()) != null) {
+           map = processLine(line, i, map);
+           i++;
         }
         System.out.println("MountainPeakMap created");
         System.out.println(AdaptedFloydWarshall.calculateLongestSteepestPath(map).getPathNodes());
@@ -73,7 +74,7 @@ public class SingaSkii {
         if(i < height - 1){
             bottom = (i + 1) * width + j;
         }
-        List<Integer> adjNodes = new ArrayList<>();
+        List<Integer> adjNodes = new ArrayList<Integer>();
         adjNodes.add(leftTop);
         adjNodes.add(top);
         adjNodes.add(rightTop);

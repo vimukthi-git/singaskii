@@ -18,7 +18,7 @@ public class MountainPeakMap {
     public MountainPeakMap(int height, int width) {
         this.height = height;
         this.width = width;
-        this.peaks = new ArrayList<>();
+        this.peaks = new ArrayList<MountainPeak>();
     }
     
     public void addPeak(MountainPeak peak) {
