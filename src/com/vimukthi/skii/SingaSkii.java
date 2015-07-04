@@ -28,7 +28,7 @@ public class SingaSkii {
 //        String[] peaksLineStr = peakStr.split("\n");
 //        
 //        for (int i = 0; i < peaksLineStr.length; i++) {
-//            map = processLine(peaksLineStr, i, map);            
+//            map = processLine(peaksLineStr[i], i, map);            
 //        }
         
         BufferedReader br;
