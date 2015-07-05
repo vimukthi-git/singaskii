@@ -1,6 +1,7 @@
 package com.vimukthi.skii;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -18,7 +19,8 @@ public class MountainPeakMap {
     public MountainPeakMap(int height, int width) {
         this.height = height;
         this.width = width;
-        this.peaks = new ArrayList<MountainPeak>();
+        // synchronized because of access by WhiteWalkers
+        this.peaks = Collections.synchronizedList(new ArrayList<MountainPeak>());
     }
     
     public void addPeak(MountainPeak peak) {
