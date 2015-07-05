@@ -28,5 +28,7 @@ Machine spec = core i5 2GHz, 8GB
 Output for the given map,
 
 Longest path: Length = 15, drop = 1422, Peaks = [1422, 1412, 1316, 1304, 1207, 1162, 965, 945, 734, 429, 332, 310, 214, 143, 0]
+
 Email to : 151422@redmart.com
+
 Elapsed Time= 4340ms
