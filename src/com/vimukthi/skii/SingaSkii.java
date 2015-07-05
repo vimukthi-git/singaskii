@@ -37,6 +37,8 @@ public class SingaSkii {
         System.out.println("Longest path: Length = " + longest.getLength() 
                 + ", drop = " + longest.getDrop() + ", Peaks = " 
                 + longest.getPathNodes());
+        System.out.println("Email to : " + String.valueOf(longest.getLength()) + 
+                String.valueOf(longest.getDrop()) + "@redmart.com");
         System.out.println("Elapsed Time= " + elapsedTime + "ms");        
     }
 
