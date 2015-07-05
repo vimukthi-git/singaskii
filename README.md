@@ -13,8 +13,10 @@ java -jar -Xms6020m -Xmx6020m dist/SingaSkii.jar /location/to/map.txt
 ## Algorithm
 
 There are two algorithms implemented in the code,
-1) A single threaded version to implement an adaption of Floyd-Warshall algorithm(AdaptedFloydWarshall.java) - SLOW for large maps.
-2) WhiteWalker algorithm(check WhiteWalker.java) - A multi agent based concurrent algorithm
+
+- A single threaded version to implement an adaption of Floyd-Warshall algorithm(AdaptedFloydWarshall.java) - SLOW for large maps.
+
+- GOOD ONE -> WhiteWalker algorithm(check WhiteWalker.java) - A multi agent based concurrent algorithm
 where the each agent walks down the paths and collects results to be compared and summarized later.
 
 ## Results
